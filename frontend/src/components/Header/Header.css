@@ -1,0 +1,404 @@
+/* =====================================
+            PREMIUM HERO SECTION
+===================================== */
+
+.header{
+    position:relative;
+    width:100%;
+    height:clamp(420px,75vh,720px);
+    margin:30px auto;
+    border-radius:32px;
+    overflow:hidden;
+
+    background:
+        radial-gradient(circle at 18% 0%, rgba(255,107,53,.16), transparent 42%),
+        radial-gradient(circle at 95% 25%, rgba(255,145,77,.13), transparent 40%),
+        linear-gradient(
+            rgba(15,23,42,.30),
+            rgba(15,23,42,.40)
+        ),
+        url("/header_img.png") center center/cover no-repeat;
+
+    box-shadow:
+        0 40px 90px rgba(2,6,23,.14);
+
+    animation: fadeInUp .75s ease;
+}
+
+.hero-card{
+    position:absolute;
+    right:6%;
+    bottom:10%;
+    padding:22px;
+    width:260px;
+    border-radius:24px;
+
+    background: rgba(255,255,255,.12);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+
+    border: 1px solid rgba(255,255,255,.22);
+    color:#fff;
+
+    box-shadow:
+        0 28px 70px rgba(2,6,23,.22);
+
+    animation: float 2.5s ease-in-out infinite alternate;
+}
+
+/* Dark Overlay */
+
+.header::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at left,
+            rgba(255,107,53,.20),
+            transparent 45%
+        );
+
+}
+
+/* Glass Blur */
+
+.header::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2,6,23,.60),
+            rgba(2,6,23,.18),
+            transparent
+        );
+
+}
+
+/* =====================================
+          CONTENT
+===================================== */
+
+.header-contents{
+
+    position:absolute;
+
+    z-index:5;
+
+    left:7%;
+
+    bottom:12%;
+
+    max-width:620px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    animation:fadeIn 1.2s;
+
+}
+
+/* Badge */
+
+.header-contents span{
+    width:max-content;
+    padding:8px 16px;
+    border-radius:40px;
+
+    background: rgba(255,255,255,.12);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+
+    color:#fff;
+
+    font-size:14px;
+    font-weight:650;
+
+    border:1px solid rgba(255,255,255,.22);
+
+}
+
+/* Heading */
+
+.header-contents h2{
+
+    font-size:clamp(34px,5vw,64px);
+
+    line-height:1.1;
+
+    color:#fff;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+}
+
+/* Description */
+
+.header-contents p{
+
+    color:rgba(255,255,255,.9);
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    max-width:540px;
+
+}
+
+/* Buttons */
+
+.header-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:10px;
+
+}
+
+/* Primary Button */
+
+.header-contents button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+/* Order Button */
+
+.header-contents button:first-child{
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #FF6B35,
+        #FF914D
+    );
+
+    box-shadow:
+        0 15px 30px rgba(255,107,53,.35);
+
+}
+
+.header-contents button:first-child:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 22px 40px rgba(255,107,53,.45);
+
+}
+
+/* Secondary Button */
+
+.header-contents button:last-child{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    color:#fff;
+
+}
+
+.header-contents button:last-child:hover{
+
+    background:rgba(255,255,255,.25);
+
+}
+
+/* =====================================
+        FLOATING GLASS CARD
+===================================== */
+
+.hero-card{
+    position:absolute;
+    right:6%;
+    bottom:10%;
+    padding:22px;
+    width:260px;
+    border-radius:24px;
+
+    background: rgba(255,255,255,.12);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+
+    border: 1px solid rgba(255,255,255,.22);
+    color:#fff;
+
+    box-shadow:
+        0 28px 70px rgba(2,6,23,.22);
+
+}
+
+.hero-card h3{
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+}
+
+.hero-card p{
+
+    color:rgba(255,255,255,.85);
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+/* =====================================
+          TABLET
+===================================== */
+
+@media(max-width:992px){
+
+.header{
+
+height:520px;
+
+}
+
+.header-contents{
+
+max-width:500px;
+
+}
+
+.header-contents h2{
+
+font-size:46px;
+
+}
+
+.hero-card{
+
+display:none;
+
+}
+
+}
+
+/* =====================================
+            MOBILE
+===================================== */
+
+@media(max-width:768px){
+
+.header{
+
+height:450px;
+
+border-radius:24px;
+
+}
+
+.header-contents{
+
+left:25px;
+
+right:25px;
+
+bottom:35px;
+
+max-width:100%;
+
+gap:16px;
+
+}
+
+.header-contents h2{
+
+font-size:34px;
+
+}
+
+.header-contents p{
+
+font-size:14px;
+
+line-height:1.6;
+
+}
+
+.header-buttons{
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.header-contents button{
+
+width:100%;
+
+}
+
+}
+
+/* =====================================
+        SMALL MOBILE
+===================================== */
+
+@media(max-width:480px){
+
+.header{
+
+height:400px;
+
+}
+
+.header-contents h2{
+
+font-size:28px;
+
+}
+
+.header-contents p{
+
+display:none;
+
+}
+
+.header-contents button{
+
+padding:14px;
+
+}
+
+}

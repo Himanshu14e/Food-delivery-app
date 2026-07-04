@@ -1,0 +1,156 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Reset */
+*{
+    
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg:#F8FAFC;
+    --surface:#FFFFFF;
+    --text:#1E293B;
+    --text-light:#64748B;
+    --border:#E2E8F0;
+    --primary:#0F172A;
+    --shadow:0 4px 20px rgba(15,23,42,0.05);
+    --radius:14px;
+}
+
+/* Body */
+body{
+
+    min-height:100vh;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Outfit',sans-serif;
+    font-size:15px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+}
+
+/* Links */
+a{
+    text-decoration:none;
+    color:inherit;
+    transition:0.25s ease;
+}
+
+a:hover{
+    color:var(--primary);
+}
+
+/* Divider */
+hr{
+    border:none;
+    height:1px;
+    background:var(--border);
+    margin:20px 0;
+}
+
+/* Main Layout */
+.app-content{
+    display:flex;
+    gap:24px;
+    padding:24px;
+    align-items:flex-start;
+}
+
+/* Flex Column */
+.flex-col{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+/* Cursor */
+.cursor{
+    cursor:pointer;
+    transition:.25s ease;
+}
+
+.cursor:hover{
+    opacity:.85;
+}
+
+/* Buttons */
+button{
+    border:none;
+    outline:none;
+    cursor:pointer;
+    font-family:inherit;
+    border-radius:10px;
+    padding:12px 20px;
+    background:#111827;
+    color:white;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* Inputs */
+input,
+textarea,
+select{
+    width:100%;
+    padding:12px 16px;
+    border:1px solid var(--border);
+    border-radius:10px;
+    background:var(--surface);
+    font-family:inherit;
+    outline:none;
+    transition:.25s;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color:#CBD5E1;
+    box-shadow:0 0 0 4px rgba(148,163,184,.15);
+}
+
+/* Card */
+.card{
+    
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:20px;
+    box-shadow:var(--shadow);
+}
+
+/* Images */
+img{
+    display:block;
+    max-width:100%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#CBD5E1;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#94A3B8;
+}
+
+/* Selection */
+::selection{
+    background:#E2E8F0;
+    color:#111827;
+}

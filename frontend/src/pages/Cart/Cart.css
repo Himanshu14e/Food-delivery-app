@@ -1,0 +1,478 @@
+/* ==========================================
+                CART
+========================================== */
+
+.cart{
+    width:100%;
+    margin:80px auto;
+}
+
+/* ========================= */
+
+.cart-items-title{
+
+    display:grid;
+
+    grid-template-columns:
+    .8fr
+    2fr
+    1fr
+    1fr
+    1fr
+    .5fr;
+
+    align-items:center;
+
+    padding:18px 20px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#64748B;
+
+    background:#F8FAFC;
+
+    border-radius:18px;
+
+}
+
+/* ========================= */
+
+.cart-items-title.cart-items-item{
+
+    margin:15px 0;
+
+    background:#fff;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+}
+
+.cart-items-title.cart-items-item:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+}
+
+/* Image */
+
+.cart-items-item img{
+
+    width:70px;
+    height:70px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+}
+
+/* Text */
+
+.cart-items-item p{
+
+    color:#334155;
+
+    font-weight:500;
+
+}
+
+/* Remove */
+
+.cart-items-item .cross{
+
+    color:#EF4444;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cart-items-item .cross:hover{
+
+    transform:scale(1.25);
+
+    color:#DC2626;
+
+}
+
+/* Divider */
+
+.cart hr{
+
+    display:none;
+
+}
+
+/* ==========================================
+            CART BOTTOM
+========================================== */
+
+.cart-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:35px;
+
+    margin-top:50px;
+
+}
+
+/* ==========================
+        TOTAL CARD
+========================== */
+
+.cart-total{
+
+    flex:1;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.7);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.06);
+
+}
+
+.cart-total h2{
+
+    margin-bottom:20px;
+
+    font-size:26px;
+
+    color:#1E293B;
+
+}
+
+/* Details */
+
+.cart-total-detail{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:14px 0;
+
+    color:#64748B;
+
+    font-size:15px;
+
+}
+
+.cart-total hr{
+
+    margin:10px 0;
+
+    border:none;
+
+    height:1px;
+
+    background:#E2E8F0;
+
+}
+
+/* Button */
+
+.cart-total button{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        135deg,
+        #FF6B35,
+        #FF914D
+    );
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:
+        0 15px 30px rgba(255,107,53,.25);
+
+}
+
+.cart-total button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 22px 40px rgba(255,107,53,.35);
+
+}
+
+/* ==========================================
+            PROMO
+========================================== */
+
+.cart-promocode{
+
+    flex:1;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.7);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.06);
+
+}
+
+.cart-promocode p{
+
+    color:#64748B;
+
+    margin-bottom:15px;
+
+}
+
+/* Input */
+
+.cart-promocode-input{
+
+    display:flex;
+
+    overflow:hidden;
+
+    border-radius:16px;
+
+    background:#F8FAFC;
+
+    border:1px solid #E2E8F0;
+
+}
+
+.cart-promocode-input input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    padding:16px;
+
+    font-size:15px;
+
+}
+
+.cart-promocode-input button{
+
+    border:none;
+
+    padding:16px 24px;
+
+    cursor:pointer;
+
+    background:#111827;
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.cart-promocode-input button:hover{
+
+    background:#FF6B35;
+
+}
+
+/* ==========================================
+            TABLET
+========================================== */
+
+@media(max-width:992px){
+
+.cart-items-title{
+
+grid-template-columns:
+.8fr
+2fr
+1fr
+1fr
+1fr
+.5fr;
+
+font-size:13px;
+
+}
+
+.cart-items-item img{
+
+width:60px;
+height:60px;
+
+}
+
+.cart-bottom{
+
+flex-direction:column;
+
+}
+
+}
+
+/* ==========================================
+            MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.cart{
+
+margin-top:50px;
+
+}
+
+/* Hide Header */
+
+.cart-items-title:first-child{
+
+display:none;
+
+}
+
+/* Card Layout */
+
+.cart-items-title.cart-items-item{
+
+display:grid;
+
+grid-template-columns:80px 1fr;
+
+gap:15px;
+
+padding:18px;
+
+align-items:start;
+
+}
+
+.cart-items-item img{
+
+width:80px;
+height:80px;
+
+}
+
+.cart-items-item p{
+
+font-size:14px;
+
+}
+
+.cart-total,
+.cart-promocode{
+
+padding:22px;
+
+}
+
+.cart-promocode-input{
+
+flex-direction:column;
+
+background:none;
+
+border:none;
+
+gap:12px;
+
+}
+
+.cart-promocode-input input{
+
+background:#F8FAFC;
+
+border-radius:14px;
+
+border:1px solid #E2E8F0;
+
+}
+
+.cart-promocode-input button{
+
+width:100%;
+
+border-radius:14px;
+
+}
+
+}
+
+/* ==========================================
+        SMALL MOBILE
+========================================== */
+
+@media(max-width:480px){
+
+.cart-total h2{
+
+font-size:22px;
+
+}
+
+.cart-items-item img{
+
+width:70px;
+height:70px;
+
+}
+
+.cart-total,
+.cart-promocode{
+
+padding:18px;
+
+}
+
+}

@@ -1,0 +1,259 @@
+/* ==========================
+        ADD PRODUCT PAGE
+========================== */
+
+.add{
+    width:75%;
+    margin:40px auto;
+    padding:35px;
+
+    background:rgba(255,255,255,.60);
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.6);
+    border-radius:24px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.06),
+        inset 0 1px 0 rgba(255,255,255,.8);
+
+    color:#374151;
+}
+
+/* Form */
+
+.add form{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+/* Labels */
+
+.add p{
+    font-size:15px;
+    font-weight:600;
+    color:#4B5563;
+    margin-bottom:8px;
+}
+
+/* Upload */
+
+.add-img-upload{
+    width:160px;
+    height:160px;
+
+    border:2px dashed rgba(255,107,53,.35);
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.45);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.add-img-upload:hover{
+
+    border-color:#FF6B35;
+
+    background:rgba(255,107,53,.08);
+
+    transform:scale(1.03);
+
+}
+
+.add-img-upload img{
+
+    width:70px;
+    opacity:.7;
+}
+
+/* Inputs */
+
+.add-product-name,
+.add-product-description{
+
+    width:100%;
+
+}
+
+.add-product-name input,
+.add-product-description textarea{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(18px);
+
+    color:#1F2937;
+
+    font-size:15px;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(132, 110, 110, 0.6);
+
+    transition:.3s;
+
+}
+
+.add-product-description textarea{
+
+    min-height:140px;
+
+    resize:none;
+
+}
+
+.add-product-name input:focus,
+.add-product-description textarea:focus{
+
+    box-shadow:
+        0 0 0 4px rgba(248, 114, 66, 0.15);
+
+}
+
+/* Category & Price */
+
+.add-category-price{
+
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.add-category,
+.add-price{
+
+    flex:1;
+
+    min-width:180px;
+
+}
+
+.add-category-price select,
+.add-category-price input{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:none;
+    
+    outline:none;
+
+    border-radius:16px;
+
+    background:rgba(247, 246, 246, 0.831);
+
+    backdrop-filter:blur(18px);
+
+    color:#010101;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.add-category-price select:focus,
+.add-category-price input:focus{
+
+    box-shadow:
+        0 0 0 4px rgba(241, 124, 81, 0.15);
+
+}
+
+/* Button */
+
+.add-btn{
+
+    width:180px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:rgb(255, 255, 255);
+
+    background:linear-gradient(
+        135deg,
+        #FF6B35,
+        #FF914D
+    );
+
+    box-shadow:
+        0 12px 30px rgba(255,107,53,.30);
+
+    transition:.35s;
+
+}
+
+.add-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 18px 35px rgba(255,107,53,.40);
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .add{
+
+        width:95%;
+        padding:20px;
+
+    }
+
+    .add-category-price{
+
+        flex-direction:column;
+
+        gap:18px;
+
+    }
+
+    .add-btn{
+
+        width:100%;
+
+    }
+
+    .add-img-upload{
+
+        width:130px;
+        height:130px;
+
+    }
+
+}

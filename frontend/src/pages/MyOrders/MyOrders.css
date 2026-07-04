@@ -1,0 +1,347 @@
+/* ==========================================
+                MY ORDERS
+========================================== */
+
+.my-orders{
+    width:100%;
+    max-width:1180px;
+    margin:60px auto;
+    padding:0 20px;
+}
+
+.my-orders-hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:24px;
+    margin-bottom:32px;
+    padding:28px 30px;
+    background: linear-gradient(135deg, rgba(255,255,255,.9), rgba(255,239,219,.85));
+    border-radius:32px;
+    border:1px solid rgba(255,148,77,.25);
+    box-shadow:0 20px 45px rgba(255,148,77,.08);
+}
+
+.my-orders-label{
+    text-transform: uppercase;
+    letter-spacing:0.22em;
+    font-size:12px;
+    font-weight:800;
+    color:#FB923C;
+    margin-bottom:8px;
+}
+
+.my-orders h2{
+    font-size:clamp(32px,2.4vw,44px);
+    font-weight:800;
+    color:#111827;
+    margin:0;
+    line-height:1.05;
+}
+
+.my-orders-description{
+    margin-top:12px;
+    max-width:620px;
+    color:#475569;
+    font-size:16px;
+    line-height:1.8;
+}
+
+.orders-grid{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    gap:24px;
+}
+
+.empty-state{
+    padding:40px;
+    text-align:center;
+    border-radius:24px;
+    background:rgba(248,250,252,.9);
+    border:1px solid rgba(148,163,184,.3);
+    color:#475569;
+    font-size:16px;
+    box-shadow:0 12px 30px rgba(15,23,42,.06);
+}
+
+/* ==========================================
+                ORDER CARD
+========================================== */
+
+.order-card{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+    padding:26px;
+    border-radius:28px;
+    background:rgba(255,255,255,.95);
+    border:1px solid rgba(226,232,240,.7);
+    box-shadow:0 24px 60px rgba(15,23,42,.08);
+    transition:transform .35s ease, box-shadow .35s ease;
+}
+
+.order-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 30px 70px rgba(15,23,42,.12);
+}
+
+.order-card-header{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+    align-items:flex-start;
+}
+
+.order-card-identity{
+    display:flex;
+    gap:16px;
+    align-items:center;
+}
+
+.order-card-icon{
+    width:64px;
+    height:64px;
+    background:rgba(255,243,236,.9);
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.order-card-icon img{
+    width:32px;
+    height:32px;
+}
+
+.order-card-number{
+    color:#0F172A;
+    font-weight:800;
+    font-size:16px;
+    margin-bottom:6px;
+}
+
+.order-card-date{
+    color:#64748B;
+    font-size:14px;
+}
+
+.order-card-status{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.status-pill{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 14px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:700;
+    color:#1F2937;
+    background:rgba(248,250,252,.9);
+}
+
+.status-pill.payment{
+    background:rgba(236,253,245,.85);
+    color:#047857;
+}
+
+.status-pill.paid{
+    background:rgba(220,252,231,.9);
+    color:#166534;
+}
+
+.status-pill.pending{
+    background:rgba(254,242,242,.9);
+    color:#991B1B;
+}
+
+.order-card-body{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+}
+
+.order-card-section h4{
+    margin:0 0 10px;
+    color:#0F172A;
+    font-size:15px;
+    font-weight:700;
+}
+
+.order-card-section p{
+    margin:0;
+    color:#475569;
+    line-height:1.8;
+    word-break:break-word;
+    font-size:15px;
+}
+
+.order-card-footer{
+    display:flex;
+    justify-content:space-between;
+    gap:18px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.order-card-summary{
+    display:flex;
+    gap:24px;
+    flex-wrap:wrap;
+}
+
+.order-card-summary div{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.order-card-summary span{
+    color:#64748B;
+    font-size:13px;
+}
+
+.order-card-summary strong{
+    color:#111827;
+    font-size:18px;
+}
+
+.order-card-footer button{
+    padding:14px 26px;
+    border:none;
+    border-radius:18px;
+    background:linear-gradient(135deg, #FF6B35, #FF914D);
+    color:#fff;
+    font-weight:700;
+    font-size:14px;
+    cursor:pointer;
+    transition:transform .25s ease, box-shadow .25s ease;
+    box-shadow:0 14px 30px rgba(255,107,53,.22);
+}
+
+.order-card-actions{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+}
+
+.cancel-button{
+    padding:14px 22px;
+    border:1px solid rgba(248,113,113,.35);
+    border-radius:18px;
+    background:rgba(254,226,226,.95);
+    color:#b91c1c;
+    font-weight:700;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+
+.cancel-button:hover{
+    transform:translateY(-2px);
+    background:rgba(254,205,205,.95);
+}
+
+.order-card-footer button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 18px 35px rgba(255,107,53,.28);
+}
+
+/* ==========================================
+                TABLET
+========================================== */
+
+@media(max-width:992px){
+
+.orders-grid{
+    grid-template-columns:1fr;
+}
+
+.order-card-body{
+    grid-template-columns:1fr;
+}
+
+}
+
+/* ==========================================
+                MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.my-orders{
+    margin:40px auto;
+}
+
+.my-orders-hero{
+    padding:24px;
+}
+
+.order-card{
+    padding:22px;
+}
+
+.order-card-header{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.order-card-icon{
+    width:56px;
+    height:56px;
+}
+
+.order-card-icon img{
+    width:28px;
+    height:28px;
+}
+
+.order-card-footer button{
+    width:100%;
+    text-align:center;
+}
+
+}
+
+/* ==========================================
+            SMALL MOBILE
+========================================== */
+
+@media(max-width:520px){
+
+.my-orders{
+    padding:0 16px;
+}
+
+.my-orders h2{
+    font-size:28px;
+}
+
+.order-card{
+    padding:18px;
+    border-radius:22px;
+}
+
+.order-card-summary{
+    gap:14px;
+}
+
+.order-card-icon{
+    width:52px;
+    height:52px;
+}
+
+.order-card-icon img{
+    width:26px;
+    height:26px;
+}
+
+.order-card-footer button{
+    font-size:13px;
+    padding:14px;
+}
+
+}
