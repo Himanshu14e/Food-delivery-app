@@ -36,7 +36,7 @@ npm start
 
 Create a `.env` file in the backend folder and add values such as:
 ```env
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=mongodb+srv://himanshukardam1437_db_user:<db_password>@cluster0.aqpt8cm.mongodb.net/?appName=Cluster0
 JWT_SECRET=your_secret_key
 FRONTEND_URL=http://localhost:5173
 STRIPE_SECRET_KEY=your_stripe_secret_key
