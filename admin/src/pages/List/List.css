@@ -1,4 +1,4 @@
-/
+
 
 .list-table{
 
@@ -129,6 +129,7 @@
 
 /* Delete Button */
 
+
 .list-table-format .delete{
 
     display:flex;
@@ -156,7 +157,7 @@
 
     background:#FF6B35;
 
-    color:#fff;
+    color:#b1acac;
 
     transform:scale(1.08);
 
@@ -183,7 +184,7 @@
     border:0;
     cursor:pointer;
 }
-.list-actions .edit-btn{ background:#F3F4F6 }
+.list-actions .edit-btn{ background:#0b0e14 }
 .list-actions .delete-btn{ background: #FFF5F5; color:#C53030 }
 
 /* Modal styles */

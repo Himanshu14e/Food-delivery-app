@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import { assets } from './../../assets/assets';
 
-const Navbar = () => {
+const Navbar = ({ onLogout, adminName }) => {
   return (
     <header className='navbar'>
       <div className='navbar-brand'>
@@ -13,8 +13,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className='navbar-profile'>
-        <span className='navbar-user'>Admin</span>
+        <span className='navbar-user'>{adminName || 'Admin'}</span>
         <img src={assets.profile_image} alt="Admin profile" className="profile" />
+        <button className='navbar-logout' onClick={onLogout}>Logout</button>
       </div>
     </header>
   )

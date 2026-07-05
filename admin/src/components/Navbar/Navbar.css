@@ -54,6 +54,16 @@
     border:2px solid rgba(255,255,255,.9);
 }
 
+.navbar-logout{
+    border:none;
+    border-radius:999px;
+    padding:0.6rem 0.9rem;
+    background:#fef2f2;
+    color:#b91c1c;
+    font-weight:700;
+    cursor:pointer;
+}
+
 @media(max-width:768px){
     .navbar{
         flex-direction:column;

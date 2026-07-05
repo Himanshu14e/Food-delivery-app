@@ -36,7 +36,7 @@ npm start
 
 Create a `.env` file in the backend folder and add values such as:
 ```env
-MONGO_URI=mongodb+srv://himanshukardam1437_db_user:<db_password>@cluster0.aqpt8cm.mongodb.net/?appName=Cluster0
+MONGO_URI=mongodb+srv://dulanjalisenarathna93:E2JUb0zfaT2FVp8D@cluster0.exkxkun.mongodb.net/reactjs-food-delivery-app
 JWT_SECRET=your_secret_key
 FRONTEND_URL=http://localhost:5173
 STRIPE_SECRET_KEY=your_stripe_secret_key

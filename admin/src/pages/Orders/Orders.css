@@ -226,6 +226,7 @@
 }
 
 .status-badge{
+    
     background:rgba(59,130,246,.12);
     color:#0B63E1;
 }
@@ -254,7 +255,8 @@
     display:flex;
     flex-direction:column;
     gap:10px;
-    align-items:flex-end;
+    align-items:flex-start;
+    
 }
 
 .remove-btn{
