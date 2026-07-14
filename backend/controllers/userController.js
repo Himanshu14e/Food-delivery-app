@@ -4,7 +4,8 @@ import bcrypt from 'bcrypt'
 import validator from 'validator'
 import { OAuth2Client } from 'google-auth-library'
 
-const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID)
+const googleClientId = process.env.GOOGLE_CLIENT_ID || '976374930733-jhm5uut1477nuj0div0bppcs1t7hhg3e.apps.googleusercontent.com';
+const googleClient = new OAuth2Client(googleClientId)
 
 //login user
 const loginUser = async (req,res) =>{
@@ -47,7 +48,7 @@ const googleLogin = async (req, res) => {
     try {
         const ticket = await googleClient.verifyIdToken({
             idToken,
-            audience: process.env.GOOGLE_CLIENT_ID,
+            audience: googleClientId,
         });
 
         const payload = ticket.getPayload();

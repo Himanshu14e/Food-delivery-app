@@ -20,19 +20,11 @@
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
-<<<<<<< HEAD
     "@vitejs/plugin-react": "^4.7.0",
-=======
-    "@vitejs/plugin-react": "^6.0.3",
->>>>>>> 0311ee071e06971bf1e6529078c96c183cb193b2
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-<<<<<<< HEAD
     "vite": "^5.4.21"
-=======
-    "vite": "^8.1.3"
->>>>>>> 0311ee071e06971bf1e6529078c96c183cb193b2
   }
 }
